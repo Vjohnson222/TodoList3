@@ -16,31 +16,21 @@ let todoList =[
    },
    ];
 
-   const newTodoList = () => {
+   function App() {
     return (
-      <ul>
-        {todoList.map(item => (
-          <li key={item.id}>{item.title}</li>
-        ))}
-      </ul>
-     
-
+      <div style={{ textAlign: 'center' }}>
+        <h1>Todo List</h1>
+        <ul>
+          {todoList.map(item =>
+            <li key={item.id}>
+              <l1>{item.title}</l1>
+            </li>
+  
+          )}
+  
+        </ul>
+      </div>
     );
- 
-};
-function App() {
-  return (
-    <div style={{ textAlign: 'center' }}>
-      <h1>Todo list</h1>
-      <ul style={{ listStyle: 'none' }}>
-			<li>Apple</li>
-			<li>Orange</li>
-			<li>Guava</li>
-      	<li>Guava</li>
-		</ul>
-    <div textContent={newTodoList} />
-    </div>
-  );
-}
-
-export default App;
+  }
+  
+  export default App;
