@@ -36,6 +36,7 @@ function App() {
 			<li>Apple</li>
 			<li>Orange</li>
 			<li>Guava</li>
+      	<li>Guava</li>
 		</ul>
     <div textContent={newTodoList} />
     </div>
