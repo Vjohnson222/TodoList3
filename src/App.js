@@ -23,7 +23,7 @@ let todoList =[
         <ul>
           {todoList.map(item =>
             <li key={item.id}>
-              <l1>{item.title}</l1>
+              <li>{item.title}</li>
             </li>
   
           )}
